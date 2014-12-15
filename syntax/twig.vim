@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:	Twig template
 " Maintainer:	Gabriel Gosselin <gabrielNOSPAM@evidens.ca>
-" Last Change:	2014 December 4
+" Last Change:	2014 December 15
 " Version:	1.1
 "
 " Based Jinja syntax by:	Armin Ronacher <armin.ronacher@active-4.com>
