@@ -17,16 +17,13 @@
 "     2011 July 27:   Changed all references of jinja tp twig
 "     2014 December 4:   Do not assume that the base filetype is HTML.
 
-if exists('b:main_syntax')
-  finish
-endif
-if exists('b:current_syntax')
-  let b:main_syntax = b:current_syntax
-else
-  let b:main_syntax = 'twig'
+if exists("b:current_syntax")
+    finish
 endif
 
 syntax case match
+
+source /usr/share/vim/vim74/syntax/html.vim
 
 " Twig template built-in tags and parameters (without filter, macro, is and
 " raw, they have special treatment)
