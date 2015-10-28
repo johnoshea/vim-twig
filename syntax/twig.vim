@@ -28,6 +28,8 @@ endif
 
 syntax case match
 
+source /usr/share/vim/vim74/syntax/html.vim
+
 " Twig template built-in tags and parameters (without filter, macro, is and
 " raw, they have special treatment)
 syn keyword twigStatement containedin=twigVarBlock,twigTagBlock,twigNested contained and if else in not or recursive as import
