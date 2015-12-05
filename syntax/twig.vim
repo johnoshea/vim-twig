@@ -1,9 +1,10 @@
 " Vim syntax file
 " Language:	Twig template
-" Maintainer:	Gabriel Gosselin <gabrielNOSPAM@evidens.ca>
-" Last Change:	2014 December 15
-" Version:	1.1
+" Maintainer:	John O'Shea <john.m.oshea@gmail.com>
+" Last Change:	2015-12-05
+" Version:	1.1a
 "
+" Original code by: Gabriel Gosselin <gabrielNOSPAM@evidens.ca>
 " Based Jinja syntax by:	Armin Ronacher <armin.ronacher@active-4.com>
 " With modifications by Benji Fisher, Ph.D.
 "
@@ -16,6 +17,7 @@
 "     2008 May 9:     Added support for Jinja2 changes (new keyword rules)
 "     2011 July 27:   Changed all references of jinja tp twig
 "     2014 December 4:   Do not assume that the base filetype is HTML.
+"     2015 December 5:   Source the correct html syntax file
 
 if exists('b:main_syntax')
   finish
@@ -28,7 +30,7 @@ endif
 
 syntax case match
 
-source /usr/share/vim/vim74/syntax/html.vim
+runtime! syntax/html.vim
 
 " Twig template built-in tags and parameters (without filter, macro, is and
 " raw, they have special treatment)
